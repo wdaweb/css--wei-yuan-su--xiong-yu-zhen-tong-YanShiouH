@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .mainBody {
+      width: 224px;
+      height: 224px;
+      position: absolute;
+      border-radius: 50%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background: black 50%;
+    }
+    .mainBody::before{
+      content: "";
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background-color: red;
+      position: absolute;
+      left: -16px;
+      top: 80px;
+    }
+    .mainBody::after{
+      content: "";
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background-color: red;
+      position: absolute;
+      top: 80px;
+      left: 184px;
+    }
+    .earLeft{
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      border-radius: 50%;
+      background-color: white;
+      border: solid black 8px;
+      left: 20px;
+    }
+    .earRight{
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      border-radius: 50%;
+      background-color: white;
+      border: 8px solid black;
+      left: 164px;
+    }
+    .eyeLeft{
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background-color: black;
+      border: solid white 8px;
+      position: absolute;
+      top: 44px;
+      left: 44px;
+    }
+    .eyeRight{
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background-color: black;
+      border: solid white 8px;
+      position: absolute;
+      top: 44px;
+      left: 132px;
+    }
+    .mouth{
+      width: 96px;
+      height: 66px;
+      border-radius: 50%;
+      position: absolute;
+      top: 84px;
+      left: 61px;
+      background-color: white;
+    }
+    .mouth::before{
+      content: "";
+      background-color: black;
+      position: absolute;
+      width: 24px;
+      height: 16px;
+      border-radius: 50%;
+      left: 36px;
+      top: 4px;
+    }
+    .mouth::after{
+      content: "";
+      background-color: black;
+      position: absolute;
+      width: 60px;
+      height: 20px;
+      border-radius: 50%;
+      top: 32px;
+      left: 20px;
+    }
+    .vShapeLeft{
+      height: 28px;
+      width: 28px;
+      background-color: white;
+      transform: skewX(-50deg);
+      position: absolute;
+      left: 116px;
+      top: 168px;
+    }
+    .vShapeRight{
+      height: 28px;
+      width: 28px;
+      background-color: white;
+      transform: skew(50deg);
+      position: absolute;
+      top: 168px;
+      left: 80px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mainBody">
+    
+    <div class="earLeft"></div>
+    <div class="earRight"></div>
+    <div class="eyeLeft"></div>
+    <div class="eyeRight"></div>
+    <div class="mouth"></div>
+    <div class="vShapeLeft"></div>
+    <div class="vShapeRight"></div>
+
+  </div>
+</body>
+
+</html>
